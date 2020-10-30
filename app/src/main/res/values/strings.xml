@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="name">Diana</string>
+    <string name="yellow_star">yellow star</string>
+    <string name="bio">Note the Killable column in the above table
+        for those methods that are marked as being killable,
+        after that method returns the process hosting the activity may be
+        killed by the system at any time without another line of its code being executed.
+        Because of this, you should use the onPause() method to write any persistent
+        data (such as user edits) to storage. In addition, the method
+        onSaveInstanceState(android.os.Bundle) is called before placing the activity
+        in such a background state, allowing you to save away any dynamic instance state
+        in your activity into the given Bundle, to be later received in onCreate(Bundle)
+        if the activity needs to be re-created. See the Process Lifecycle section for
+        more information on how the lifecycle of a process is tied to the activities it is hosting.
+        Note that it is important to save persistent data in onPause() instead of
+        onSaveInstanceState(Bundle) because the latter is not part of the lifecycle callbacks,
+        so will not be called in every situation as described in its documentation.
+        For those methods that are not marked as being killable, the activity s process will
+        not be killed by the system starting from the time the method is called and continuing
+        after it returns. Thus an activity is in the killable state, for example, between after
+        onStop() to the start of onResume(). Keep in mind that under extreme memory pressure the
+        system can kill the application process at any time.</string>
+
+    <string name="what_is_your_nickname">What is your nickname</string>
+    <string name="Done">Done</string>
+</resources>
